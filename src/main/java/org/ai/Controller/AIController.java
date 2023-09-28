@@ -5,25 +5,52 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.Map;
 
 @RestController
 @RequestMapping("/ai")
 public class AIController {
+
+    @Autowired
+    private NLPService nlpService;
 
     @GetMapping("/hello")
     public String hello() {
         return "Hello, I'm your AI assistant!";
     }
 
-    @Autowired
-    private NLPService nlpService;
-
     @PostMapping("/process-text")
-    public ResponseEntity<String> processText(@RequestBody String text) {
-        String result = nlpService.processText(text);
+    public ResponseEntity<String> processText(@RequestBody Map<String, String> request) {
+        String text = request.get("text");
+        String modelName = request.get("modelName");
+
+        if (text == null || modelName == null || !isValidModel(modelName)) {
+            return ResponseEntity.badRequest().body("Invalid request. Please provide a valid modelName.");
+        }
+
+        String result;
+
+        switch (modelName.toLowerCase()) {
+            case "person" -> result = nlpService.processPersonNames(text);
+            case "date" -> result = nlpService.processDates(text);
+            case "location" -> result = nlpService.processLocations(text);
+            case "money" -> result = nlpService.processMoneyAmounts(text);
+            case "organization" -> result = nlpService.processOrganizations(text);
+            case "percentage" -> result = nlpService.processPercentages(text);
+            case "time" -> result = nlpService.processTimes(text);
+            default -> {
+                return ResponseEntity.badRequest().body("Invalid 'modelName'. Supported models: person, date, location, money, organization, percentage, time.");
+            }
+        }
+
         return ResponseEntity.ok(result);
+    }
+
+    private boolean isValidModel(String modelName) {
+        // Check if modelName is valid based on your criteria.
+        // You can implement this validation as needed.
+        return true; // Modify this based on your validation logic.
     }
 
     // Add more endpoints and logic here as your app evolves.
 }
-
