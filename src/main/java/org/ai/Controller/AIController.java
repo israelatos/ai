@@ -1,4 +1,4 @@
-package org.ai.controller;
+package org.ai.Controller;
 
 import org.ai.NaturalLanguageProcessing_NLP.NLPService;
 import org.springframework.beans.factory.annotation.Autowired;
