@@ -31,29 +31,16 @@ public class AIController {
         String result;
 
         switch (modelName.toLowerCase()) {
-            case "person":
-                result = nlpService.processPersonNames(text);
-                break;
-            case "date":
-                result = nlpService.processDates(text);
-                break;
-            case "location":
-                result = nlpService.processLocations(text);
-                break;
-            case "money":
-                result = nlpService.processMoneyAmounts(text);
-                break;
-            case "organization":
-                result = nlpService.processOrganizations(text);
-                break;
-            case "percentage":
-                result = nlpService.processPercentages(text);
-                break;
-            case "time":
-                result = nlpService.processTimes(text);
-                break;
-            default:
+            case "person" -> result = nlpService.processPersonNames(text);
+            case "date" -> result = nlpService.processDates(text);
+            case "location" -> result = nlpService.processLocations(text);
+            case "money" -> result = nlpService.processMoneyAmounts(text);
+            case "organization" -> result = nlpService.processOrganizations(text);
+            case "percentage" -> result = nlpService.processPercentages(text);
+            case "time" -> result = nlpService.processTimes(text);
+            default -> {
                 return ResponseEntity.badRequest().body("Invalid 'modelName'. Supported models: person, date, location, money, organization, percentage, time.");
+            }
         }
 
         return ResponseEntity.ok(result);
