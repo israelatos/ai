@@ -14,6 +14,49 @@ import java.io.InputStream;
 
 @Service
 public class NLPService {
+
+
+    public String processPersonNames(String text) {
+        // Implement named entity recognition for person names here.
+        // Return the result as a string.
+        return "Processed person names: " + text;
+    }
+
+    public String processDates(String text) {
+        // Implement date recognition here.
+        // Return the result as a string.
+        return "Processed dates: " + text;
+    }
+
+    public String processLocations(String text) {
+        // Implement location recognition here.
+        // Return the result as a string.
+        return "Processed locations: " + text;
+    }
+
+    public String processMoneyAmounts(String text) {
+        // Implement recognition of money amounts here.
+        // Return the result as a string.
+        return "Processed money amounts: " + text;
+    }
+
+    public String processOrganizations(String text) {
+        // Implement recognition of organizations here.
+        // Return the result as a string.
+        return "Processed organizations: " + text;
+    }
+
+    public String processPercentages(String text) {
+        // Implement recognition of percentages here.
+        // Return the result as a string.
+        return "Processed percentages: " + text;
+    }
+
+    public String processTimes(String text) {
+        // Implement recognition of times here.
+        // Return the result as a string.
+        return "Processed times: " + text;
+    }
     @Autowired
     private NLPModelsConfig nlpModelsConfig;
 
