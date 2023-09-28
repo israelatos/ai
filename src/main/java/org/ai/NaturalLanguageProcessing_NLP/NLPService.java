@@ -1,9 +1,12 @@
 package org.ai.NaturalLanguageProcessing_NLP;
 
 
+
+import org.ai.config.NLPModelsConfig;
 import opennlp.tools.namefind.NameFinderME;
 import opennlp.tools.namefind.TokenNameFinderModel;
 import opennlp.tools.util.Span;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.io.FileInputStream;
@@ -11,11 +14,18 @@ import java.io.InputStream;
 
 @Service
 public class NLPService {
+    @Autowired
+    private NLPModelsConfig nlpModelsConfig;
 
-    public String processText(String text) {
+    public String processText(String text, String modelName) {
         try {
-            // Load the model (you need to download and place the model file in your project)
-            InputStream modelIn = new FileInputStream("models/en-ner-person.bin");
+            // Load the model based on the provided model name
+            String modelPath = nlpModelsConfig.getPaths().get(modelName);
+            if (modelPath == null) {
+                return "Model not found for the specified task.";
+            }
+
+            InputStream modelIn = new FileInputStream(modelPath);
             TokenNameFinderModel model = new TokenNameFinderModel(modelIn);
             NameFinderME nameFinder = new NameFinderME(model);
 
