@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "israelatos-ai",
+  "private_key_id": "ccdb9efabda957ee571ce1216ef34d7eddcc3a90",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQCjFmYpT5CqVsNI\nba99nSzPREUAmn87u1/jitQgBms9XuT7UtnlEeWzpVEKfFi4SccG1LD/jMinIZIz\nAdnVg0bAOK4kPoeU2jmPNT6ZN6t+1XiLWo3Oz/2aBH+A+wAe1xQYNkvYld38Ye9I\npN7reEoMrIiD9FNgOAV9KSuLNeFvhqKnkBLqSnA5W6w065/xyeACDMb+PTxRlCj/\nQTdx/LdN5KU3kEtJu8v3lOvUt26mEHAgIs3yrzevGhZdqW3RXEOAsqK3XXJyyWCk\ntWpKx4Y/5FJopPtF2SVvq0PzKA+Vk5OsUQ1fGAns7MEKu+Qg6Q6ED+4eToAP1Lk7\n6HjMyXhfAgMBAAECggEADOiYTCtzZJLa1irIZIWXpw2HoKqZ6N0bPo7Ih4MP40Wq\n6NxVSYpcchcNuRS/46ZYozPGkWj6oNqeuybUWnq6Pjto8o7N0HxivfEVnq8HW1ID\nk+l7pqOpNmhQvKF2uvovKajH4Wwgq/oHJJWC3NnNPVToC/m/d7LiIawBOahEIGhD\n86JCoOihxcck1W/w6wgZz9S0tEU2KQ7Azz18BytqSDyvGXdpYFa3SEdaLmNyqmWH\nBmNeSRVwFMVZ7Pahz1nsjhnt8CEuuIbotQcCt9G04osHyJu91TgYh77AcAVAw/jW\nceFa1TxOIM3N+QJyv5N45GXCneBzqA6o+cdeHWDN8QKBgQDbR6EBCb31kfBK3LAP\nFOJ/RY3I1qrLyAD0VUjCKjqRpVsATv1Cpzluvs2H1wBiMDNSKWKJc+3+iOPRhnJx\nC3oxc3WtX7i1Yl7Fi9PrRR102mo6hGhCztVefHAuSt67aMSjBDxkym1uqD8j+li/\nb10DGVLeaoLJ2PKwsJQnlluP0wKBgQC+Zdh0QhpQKLTqepNcNO24DtqP0sqL/wSn\nWyBFaRTSEy/TQhJiK3hZIDyPXe9SlFH5z2pUqPJzcF18Kf+LZezM/fLD9J9/jeKI\nnDOHsylTamqMT9iEK9ccRPVkWbwlbbVByXwYi6DdzfFqlk4ZTwgXASDMiX+itkqj\nrp1lFKkpxQKBgQDTlLXhzoigXwTA91hZ9QjnTTGVzKxYnM9u8quVzjFdP3QjRBRT\nMA/Wr/yZSfdwxpl+ebg+cMH/jA5mqZfbQ/vPo1y0wVv0iMpxSo5cwP+/NNCzTfdc\nHz76QI/t2wg3RMwXj4rGphwZXfYuvOzNKqNQziqLubIhGVhy7K7H0+jdSQKBgBgc\n9ejjZkm4nhEELR2EZobk+rE0VQqd5Yz8cX3Y7RYd7/SlbYaZUsiW2JSfpOukdS1a\nI3FNZEdSd8R93SteYTsk/lXq6ThSU9pRTgVln1o9I/lZM2ap1rhx01I+OyHSXx5R\n0jGZnWn55xVEq+dwpumi7vB4iX2l8JYCS1S95R6xAoGAF25M6pZ31CYG0E0s3Olq\nLJxJnZSoGpRxc8IDPv4a0gSToDFaBJW80s8XSXnRZtFWSTJ28nwqBOC5SNQQSGFh\ndNkMEGQuVxJ66lRinPezkpp5L4WFht4GzLsty3te6fXz3blmfz2s1+d7qbXtpnFb\nXiI81natmXiMv2v8XjdjUoI=\n-----END PRIVATE KEY-----\n",
+  "client_email": "israelatos-ai@israelatos-ai.iam.gserviceaccount.com",
+  "client_id": "116655842792296485149",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/israelatos-ai%40israelatos-ai.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}
